@@ -1,9 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "galeri-wisata/galeri-wisata",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Aplikasi web galeri destinasi, artikel, promosi, dan galeri wisata.",
+    "keywords": ["galeri", "wisata", "destinasi"],
     "license": "MIT",
     "require": {
         "php": "^8.2",

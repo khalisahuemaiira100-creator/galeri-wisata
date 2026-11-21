@@ -1,5 +1,7 @@
 {
     "$schema": "https://www.schemastore.org/package.json",
+    "name": "galeri-wisata",
+    "description": "Aplikasi web galeri destinasi, artikel, promosi, dan galeri wisata.",
     "private": true,
     "type": "module",
     "scripts": {
