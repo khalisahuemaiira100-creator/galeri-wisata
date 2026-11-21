@@ -1,0 +1,177 @@
+:root {
+    --hijau: #0f766e;
+    --hijau-gelap: #115e59;
+    --pasir: #f6f1e7;
+    --kertas: #fffdf8;
+    --tinta: #1c1917;
+    --redup: #57534e;
+    --garis: #e7e0d4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Outfit, "Segoe UI", sans-serif;
+    color: var(--tinta);
+    background:
+        radial-gradient(circle at top left, #d8efe8 0, transparent 32rem),
+        var(--pasir);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.atas {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.merek {
+    font-family: Fraunces, Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--hijau-gelap);
+}
+
+.atas nav {
+    display: flex;
+    gap: 1rem;
+    color: var(--redup);
+    font-weight: 500;
+}
+
+main {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem;
+}
+
+.pembuka {
+    margin-top: 2.5rem;
+    padding: 2.5rem 2rem;
+    border-radius: 1.75rem;
+    background:
+        linear-gradient(145deg, rgba(15, 118, 110, 0.95), rgba(17, 94, 89, 0.88)),
+        #0f766e;
+    color: white;
+    box-shadow: 0 24px 50px rgba(15, 118, 110, 0.22);
+}
+
+.label {
+    margin: 0 0 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #d1fae5;
+}
+
+.pembuka h1 {
+    margin: 0;
+    max-width: 14ch;
+    font-family: Fraunces, Georgia, serif;
+    font-size: clamp(2.3rem, 6vw, 4.4rem);
+    line-height: 1.05;
+    font-weight: 560;
+}
+
+.pengantar {
+    max-width: 38rem;
+    margin: 1.25rem 0 0;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: #ecfdf5;
+}
+
+.fitur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: -1.6rem;
+    padding: 0 0.6rem;
+}
+
+.fitur article {
+    background: var(--kertas);
+    border: 1px solid var(--garis);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
+}
+
+.fitur span {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: var(--hijau);
+    font-weight: 600;
+}
+
+.fitur h2,
+.cara h2 {
+    margin: 0 0 0.4rem;
+    font-family: Fraunces, Georgia, serif;
+    font-size: 1.45rem;
+}
+
+.fitur p,
+.cara p,
+.cara li {
+    margin: 0;
+    color: var(--redup);
+    line-height: 1.6;
+}
+
+.cara {
+    margin-top: 2.5rem;
+    padding: 1.8rem;
+    background: var(--kertas);
+    border-radius: 1.4rem;
+    border: 1px solid var(--garis);
+}
+
+.cara ol {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.cara li + li {
+    margin-top: 0.35rem;
+}
+
+footer {
+    padding: 0 1.25rem 2rem;
+    text-align: center;
+    color: var(--redup);
+}
+
+@media (max-width: 800px) {
+    .fitur {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1.25rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .atas nav {
+        display: none;
+    }
+
+    .pembuka {
+        padding: 1.7rem 1.3rem;
+    }
+
+    .fitur {
+        grid-template-columns: 1fr;
+    }
+}
